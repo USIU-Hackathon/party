@@ -72,11 +72,12 @@ class AfricasTalkingGateway:
             recipients = decoded['SMSMessageData']['Recipients']
             return recipients
     
-    def fetchMessages(self, lastReceivedId_):
-	
-	url     = "%s?username=%s&lastReceivedId=%s" % (self.SMSURLString, self.username, lastReceivedId_)
-	headers = {'Accept' : 'application/json',
-		   'apikey' : self.apiKey }
+    def fetchMessages(self, lastReceivedId_):	
+	    url = "%s?username=%s&lastReceivedId=%s" % (self.SMSURLString, self.username, lastReceivedId_)
+	    headers = {
+                   'Accept' : 'application/json',
+                   'apikey' : self.apiKey
+                   }
 	
         try:
             request  = urllib2.Request(url, headers=headers)
