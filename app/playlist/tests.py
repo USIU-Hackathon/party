@@ -1,5 +1,5 @@
 import time
-from playlist.models import Playlist
+from playlist.models import Playlist, Tracks
 
 """
 This file demonstrates writing tests using the unittest module. These will pass
@@ -27,3 +27,5 @@ class PlayListTest(TestCase):
         
         self.assertEqual(firstplaylist.name, "First ever playlist")
         #self.assertEqual(firstplaylist.created_at, time)
+        
+    
