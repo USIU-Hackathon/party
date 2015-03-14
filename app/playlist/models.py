@@ -16,7 +16,7 @@ class Playlist(models.Model):
         return u'%s - %s' %(self.user, self.name)
     
 class Tracks(models.Model):
-    name = model.CharField(max_length=200)
+    name = models.CharField(max_length=200)
     artist = models.CharField(max_length=200)
     playlist = models.ForeignKey(Playlist)
     stream_url = models.CharField(max_length=200)
