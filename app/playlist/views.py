@@ -9,6 +9,8 @@ class UserViewSet(viewsets.ModelViewSet):
 	queryset = User.objects.all()
 	serializer_class = UserSerializer
 	
+class DjGetMessageFromAfricasTalking():
+	pass
 class SoundCloudSearch():
 	#create a client object with app credentials
 	client = soundcloud.Client(client_id='ed485d39d5d8d1214fd3142ff2485c1b')
@@ -16,7 +18,7 @@ class SoundCloudSearch():
 	#find all tracks from the Africas talking return message
 	tracks = client.get('/tracks', q={{to finish}}, license=)
 	
-class DjGetMessageFromAfricasTalking():
+
 	
 	
 	
