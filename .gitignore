@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *.pyc
 *.sqlite3
+*.idea
+
 # C extensions
 *.so
 
