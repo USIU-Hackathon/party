@@ -8,7 +8,7 @@ from  playlist.models import Playlist,Tracks
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = ('url', 'username''email', 'group')
+        fields = ('url', 'username','email')
 
 
 class GroupSerializer (serializers.HyperlinkedModelSerializer):
