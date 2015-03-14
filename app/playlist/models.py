@@ -24,3 +24,15 @@ class Tracks(models.Model):
     
     def __unicode__(self):
         return u'%s' %(self.name)
+    
+class AfricasTalking(models.Model):
+    number_from = models.CharField(max_length=30)
+    to = models.CharField(max_length=30)
+    text = models.CharField(max_length=30)
+    linkId = models.CharField(max_length=30)
+    date = models.CharField(max_length=30)
+    id = models.CharField(primary_key=True, max_length=100)
+    
+    def __unicode__(self):
+        return u'%s' %(self.text)
+    
