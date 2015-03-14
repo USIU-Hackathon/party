@@ -2,7 +2,14 @@ __author__ = 'Nelly'
 
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
-from  playlist.models import Playlist,Tracks
+from  playlist.models import Playlist,Tracks,AfricasTalking
+
+
+
+class AfricaSerializer(serializers.HyperlinkedModelSerializer):
+	class Meta:
+		model = AfricasTalking
+		fields = ('number_from','to','text','linkId','date','id')
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
