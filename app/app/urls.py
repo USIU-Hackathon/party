@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 from rest_framework import routers
-from playlist.views import UserViewSet, GroupViewSet ,PlaylistViewSet
+from playlist.views import UserViewSet, GroupViewSet ,PlaylistViewSet,TracksViewSet
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
@@ -9,6 +9,7 @@ router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'groups', GroupViewSet)
 router.register(r'playlist', PlaylistViewSet)
+router.register(r'tracks',TracksViewSet)
 
 urlpatterns = patterns('',
     # Examples:
