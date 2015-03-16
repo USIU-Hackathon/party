@@ -1,5 +1,4 @@
 # party
-We like to party 
 
 
 Installation
